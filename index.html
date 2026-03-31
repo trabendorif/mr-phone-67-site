@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR PHONE 67 — Réparation Expert Smartphone à Strasbourg</title>
+  <meta name="description" content="Réparation smartphone, PC, Mac, tablette et console à Strasbourg. Diagnostic gratuit, garantie 12 mois, pièces certifiées. Bonus QualiRépar -25€.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particleCanvas"></canvas>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.png" alt="MR PHONE 67">
+        <div>
+          <div class="nav-logo-text">MR PHONE 67</div>
+          <div class="nav-logo-sub">Strasbourg</div>
+        </div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Réparations</a>
+        <a href="#tarifs">Nos tarifs</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#contact">Contact</a>
+        <a href="#rdv" class="nav-cta">📅 Prendre RDV</a>
+      </div>
+      <div class="nav-contact">
+        <a href="mailto:contact@reparationsmartphone.net">✉️ contact@reparationsmartphone.net</a>
+        <a href="tel:0695106157">📞 06 95 10 61 57</a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge"><span class="dot"></span> Ouvert du lundi au samedi</div>
+        <h1>Réparation <span class="gradient-text">Expert</span> de vos appareils à Strasbourg</h1>
+        <p>Smartphones, PC, Mac, tablettes et consoles. Diagnostic immédiat, pièces certifiées et garantie 12 mois sur toutes nos interventions.</p>
+        <div class="hero-buttons">
+          <a href="#rdv" class="btn btn-primary">📅 Prendre rendez-vous</a>
+          <a href="#tarifs" class="btn btn-secondary">💰 Voir nos tarifs</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-number" data-target="5000">0</div>
+            <div class="hero-stat-label">Appareils réparés</div>
+          </div>
+          <div>
+            <div class="hero-stat-number">30 min</div>
+            <div class="hero-stat-label">Temps moyen</div>
+          </div>
+          <div>
+            <div class="hero-stat-number">12 mois</div>
+            <div class="hero-stat-label">Garantie</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.png" alt="Réparation smartphone expert">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="section" style="padding-top:40px;">
+  <div class="container">
+    <div class="trust-bar">
+      <div class="trust-item reveal">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-title">Réparation Express</div>
+        <div class="trust-desc">La plupart de nos interventions en moins de 30 minutes</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">🛡️</div>
+        <div class="trust-title">Garantie 12 mois</div>
+        <div class="trust-desc">Toutes nos réparations et pièces sont garanties</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">💎</div>
+        <div class="trust-title">Pièces Premium</div>
+        <div class="trust-desc">Originales ou Grade A+ pour vos appareils</div>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">🔍</div>
+        <div class="trust-title">Diagnostic Gratuit</div>
+        <div class="trust-desc">Estimation transparente et bilan complet</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">🔧 Nos Services</span>
+      <h2 class="section-title">Nos réparations</h2>
+      <p class="section-subtitle mx-auto">Nous réparons tous vos appareils électroniques avec expertise et professionnalisme.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon blue">📱</div>
+        <h3 class="service-title">Smartphones</h3>
+        <p class="service-desc">Écran, batterie, connecteur de charge, caméra, vitre arrière — toutes marques.</p>
+        <a href="#tarifs" class="service-link">Voir les tarifs →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon purple">💻</div>
+        <h3 class="service-title">Ordinateurs PC</h3>
+        <p class="service-desc">Pannes logicielles et matérielles, SSD, RAM, nettoyage, virus.</p>
+        <a href="#contact" class="service-link">Demander un devis →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon teal">🍎</div>
+        <h3 class="service-title">Mac</h3>
+        <p class="service-desc">iMac & MacBook — écran, batterie, performance, récupération de données.</p>
+        <a href="#contact" class="service-link">Demander un devis →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon green">📟</div>
+        <h3 class="service-title">Tablettes</h3>
+        <p class="service-desc">iPad & tablettes Android — écran, batterie, connecteur de charge.</p>
+        <a href="#tarifs" class="service-link">Voir les tarifs →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon orange">🎮</div>
+        <h3 class="service-title">Consoles de jeu</h3>
+        <p class="service-desc">PS5, Xbox, Nintendo Switch — écran, charge, démarrage, HDMI.</p>
+        <a href="#contact" class="service-link">Demander un devis →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon pink">🔬</div>
+        <h3 class="service-title">Carte mère</h3>
+        <p class="service-desc">Diagnostic avancé et micro-soudure de composants CMS.</p>
+        <a href="#contact" class="service-link">Demander un devis →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="section" id="marques">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">📲 Marques</span>
+      <h2 class="section-title">Réparation par marque</h2>
+      <p class="section-subtitle mx-auto">Sélectionnez la marque de votre appareil</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card reveal"><div class="brand-logo">🍎</div><div class="brand-name">Apple</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">📱</div><div class="brand-name">Samsung</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">🔶</div><div class="brand-name">Xiaomi</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">🟢</div><div class="brand-name">Oppo</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">🔵</div><div class="brand-name">Google</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">🔴</div><div class="brand-name">Huawei</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">🟡</div><div class="brand-name">Honor</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">⚫</div><div class="brand-name">Sony</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">🔻</div><div class="brand-name">OnePlus</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">🟤</div><div class="brand-name">Motorola</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">🟠</div><div class="brand-name">Realme</div></div>
+      <div class="brand-card reveal"><div class="brand-logo">🔷</div><div class="brand-name">Vivo</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="tarifs">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">💰 Tarifs</span>
+      <h2 class="section-title">Nos tarifs iPhone</h2>
+      <p class="section-subtitle mx-auto">Prix transparents, bonus QualiRépar inclus</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <div class="pricing-header">
+          <div class="pricing-device">iPhone 16 Pro Max</div>
+        </div>
+        <div class="pricing-body">
+          <div class="pricing-row"><span class="pricing-label">Écran</span><span class="pricing-price">195€</span></div>
+          <div class="pricing-row"><span class="pricing-label">Batterie</span><span class="pricing-price">85€</span></div>
+          <div class="pricing-row"><span class="pricing-label">Connecteur</span><span class="pricing-price">69€</span></div>
+          <div class="pricing-row"><span class="pricing-label">Vitre arrière</span><span class="pricing-price">139€</span></div>
+        </div>
+        <div class="pricing-footer"><a href="#rdv" class="btn btn-secondary" style="width:100%;justify-content:center;">Réserver</a></div>
+      </div>
+      <div class="pricing-card featured reveal">
+        <div class="pricing-header">
+          <div class="pricing-device">iPhone 15 Pro Max</div>
+          <span class="pricing-tag">🏷️ Bonus QualiRépar</span>
+        </div>
+        <div class="pricing-body">
+          <div class="pricing-row"><span class="pricing-label">Écran</span><span class="pricing-price"><span class="old">165€</span>140€</span></div>
+          <div class="pricing-row"><span class="pricing-label">Batterie</span><span class="pricing-price">75€</span></div>
+          <div class="pricing-row"><span class="pricing-label">Connecteur</span><span class="pricing-price">59€</span></div>
+          <div class="pricing-row"><span class="pricing-label">Vitre arrière</span><span class="pricing-price">119€</span></div>
+        </div>
+        <div class="pricing-footer"><a href="#rdv" class="btn btn-primary" style="width:100%;justify-content:center;">Réserver</a></div>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="pricing-header">
+          <div class="pricing-device">iPhone 14 Pro Max</div>
+          <span class="pricing-tag">🏷️ Bonus QualiRépar</span>
+        </div>
+        <div class="pricing-body">
+          <div class="pricing-row"><span class="pricing-label">Écran</span><span class="pricing-price"><span class="old">140€</span>115€</span></div>
+          <div class="pricing-row"><span class="pricing-label">Batterie</span><span class="pricing-price">65€</span></div>
+          <div class="pricing-row"><span class="pricing-label">Connecteur</span><span class="pricing-price">55€</span></div>
+          <div class="pricing-row"><span class="pricing-label">Vitre arrière</span><span class="pricing-price">99€</span></div>
+        </div>
+        <div class="pricing-footer"><a href="#rdv" class="btn btn-secondary" style="width:100%;justify-content:center;">Réserver</a></div>
+      </div>
+    </div>
+
+    <!-- QUALIREPAR BANNER -->
+    <div class="qualirepar reveal">
+      <div>
+        <div class="qualirepar-badge">QualiRépar</div>
+        <h3>Label Qualité Réparation</h3>
+        <p>En tant que réparateur labellisé QualiRépar, nous vous faisons bénéficier d'un bonus de réparation immédiat sur les appareils éligibles.</p>
+        <a href="#rdv" class="btn btn-accent">En profiter maintenant</a>
+      </div>
+      <div class="text-center">
+        <div class="qualirepar-amount">-25€</div>
+        <p style="color:var(--accent);font-weight:600;font-size:18px;">de réduction immédiate</p>
+        <p style="color:var(--text-muted);margin-top:8px;">sur les réparations éligibles</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOUTIQUE -->
+<section class="section" id="boutique">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">🛒 Boutique</span>
+      <h2 class="section-title">Accessoires & reconditionnés</h2>
+      <p class="section-subtitle mx-auto">Accessoires de qualité pour protéger et améliorer votre appareil.</p>
+    </div>
+    <div class="services-grid" style="margin-top:48px;">
+      <div class="service-card reveal">
+        <div class="service-icon blue">📱</div>
+        <h3 class="service-title">Smartphones reconditionnés</h3>
+        <p class="service-desc">iPhone et Android testés, garantis et prêts à l'emploi.</p>
+        <a href="https://wa.me/33695106157?text=Bonjour%2C%20je%20suis%20intéressé%20par%20un%20smartphone%20reconditionné" class="service-link" target="_blank">Demander un reconditionné →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon green">🛡️</div>
+        <h3 class="service-title">Coques et protections</h3>
+        <p class="service-desc">Coques antichoc, transparentes, verres trempés pour toutes marques.</p>
+        <a href="https://wa.me/33695106157?text=Bonjour%2C%20je%20cherche%20une%20coque%20pour%20mon%20téléphone" class="service-link" target="_blank">Demander une coque →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon orange">🔌</div>
+        <h3 class="service-title">Accessoires</h3>
+        <p class="service-desc">Chargeurs, câbles, supports, écouteurs et plus encore.</p>
+        <a href="https://wa.me/33695106157?text=Bonjour%2C%20je%20cherche%20un%20accessoire" class="service-link" target="_blank">Demander un accessoire →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RDV -->
+<section class="section" id="rdv">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">📅 Rendez-vous</span>
+      <h2 class="section-title">Prendre rendez-vous</h2>
+      <p class="section-subtitle mx-auto">Réservez un créneau en quelques clics ou contactez-nous directement.</p>
+    </div>
+    <div style="max-width:600px;margin:48px auto 0;" class="reveal">
+      <form id="rdvForm" style="display:flex;flex-direction:column;gap:16px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <input type="text" placeholder="Votre nom" required>
+          <input type="tel" placeholder="Téléphone" required>
+        </div>
+        <select required>
+          <option value="">Type d'appareil</option>
+          <option>Smartphone</option>
+          <option>Tablette</option>
+          <option>PC / Laptop</option>
+          <option>Mac / MacBook</option>
+          <option>Console de jeu</option>
+          <option>Autre</option>
+        </select>
+        <input type="text" placeholder="Marque et modèle (ex: iPhone 15 Pro)">
+        <textarea placeholder="Décrivez votre problème..." rows="4"></textarea>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:16px;padding:16px;">📅 Envoyer ma demande</button>
+      </form>
+      <div style="text-align:center;margin-top:24px;">
+        <p style="color:var(--text-muted);font-size:14px;">Ou contactez-nous directement :</p>
+        <div style="display:flex;gap:12px;justify-content:center;margin-top:12px;">
+          <a href="tel:0695106157" class="btn btn-secondary" style="font-size:14px;padding:10px 20px;">📞 Appeler</a>
+          <a href="https://wa.me/33695106157" class="btn btn-accent" style="font-size:14px;padding:10px 20px;" target="_blank">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">📍 Contact</span>
+      <h2 class="section-title">Nous trouver</h2>
+      <p class="section-subtitle mx-auto">Venez nous rendre visite dans notre boutique à Strasbourg</p>
+    </div>
+    <div class="contact-grid" style="margin-top:48px;">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Adresse</div>
+            <div class="contact-value">75 avenue Racine, 67200 Strasbourg</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Téléphone</div>
+            <div class="contact-value"><a href="tel:0695106157">06 95 10 61 57</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value"><a href="mailto:contact@reparationsmartphone.net">contact@reparationsmartphone.net</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-value"><a href="https://wa.me/33695106157" target="_blank">Envoyer un message</a></div>
+          </div>
+        </div>
+        <div class="contact-item" style="flex-direction:column;">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="contact-label">Horaires d'ouverture</div>
+            </div>
+          </div>
+          <div class="hours-grid">
+            <div class="hour-row"><span class="hour-day">Lundi</span><span class="hour-time">10h–18h</span></div>
+            <div class="hour-row"><span class="hour-day">Mardi</span><span class="hour-time">10h–18h</span></div>
+            <div class="hour-row"><span class="hour-day">Mercredi</span><span class="hour-time">10h–18h</span></div>
+            <div class="hour-row"><span class="hour-day">Jeudi</span><span class="hour-time">10h–18h</span></div>
+            <div class="hour-row"><span class="hour-day">Vendredi</span><span class="hour-time">10h–18h</span></div>
+            <div class="hour-row"><span class="hour-day">Samedi</span><span class="hour-time">10h–18h</span></div>
+            <div class="hour-row"><span class="hour-day">Dimanche</span><span class="hour-time" style="color:#ef4444;">Fermé</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.5!2d7.7113!3d48.5788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c8515a2dc5e7%3A0x57c4500ee37a8b0!2s75%20Av.%20Racine%2C%2067200%20Strasbourg!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="nav-logo" style="margin-bottom:8px;">
+          <img src="images/logo.png" alt="MR PHONE 67" style="width:40px;height:40px;border-radius:50%;">
+          <div>
+            <div class="nav-logo-text" style="font-size:18px;">MR PHONE 67</div>
+            <div class="nav-logo-sub">Strasbourg</div>
+          </div>
+        </a>
+        <div class="footer-brand"><p>Vente d'accessoires. Réparation smartphone, PC, console à Strasbourg. Labellisé QualiRépar.</p></div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="#services">Smartphones</a>
+        <a href="#services">Ordinateurs</a>
+        <a href="#services">Mac</a>
+        <a href="#services">Tablettes</a>
+        <a href="#services">Consoles</a>
+        <a href="#services">Carte mère</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <a href="#tarifs">Nos tarifs</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#rdv">Prendre RDV</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <a href="tel:0695106157">📞 06 95 10 61 57</a>
+        <a href="mailto:contact@reparationsmartphone.net">✉️ Email</a>
+        <a href="https://wa.me/33695106157" target="_blank">💬 WhatsApp</a>
+        <a href="https://www.google.com/maps/place/75+Av.+Racine,+67200+Strasbourg" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MR PHONE 67 — Tous droits réservés</span>
+      <span>75 avenue Racine, 67200 Strasbourg</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/33695106157" target="_blank" class="whatsapp-float" title="Contactez-nous sur WhatsApp">💬</a>
+
+<script src="app.js"></script>
+</body>
+</html>
