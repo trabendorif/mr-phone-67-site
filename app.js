@@ -148,10 +148,19 @@ rdvForm.addEventListener('submit', (e) => {
   const tel = inputs[1].value || 'Non renseigné';
   const appareil = inputs[2].value || 'Non renseigné';
   const modele = inputs[3].value || 'Non renseigné';
-  const probleme = inputs[4].value || 'Non renseigné';
+  const dateRdv = inputs[4].value || 'Non renseigné';
+  const heureRdv = inputs[5].value || 'Non renseigné';
+  const probleme = inputs[6].value || 'Non renseigné';
+
+  // Format date for display
+  let dateFormatted = dateRdv;
+  if (dateRdv && dateRdv !== 'Non renseigné') {
+    const d = new Date(dateRdv);
+    dateFormatted = d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  }
 
   // Build email body
-  const subject = encodeURIComponent(`Demande de RDV — ${nom} — ${appareil}`);
+  const subject = encodeURIComponent(`Demande de RDV — ${nom} — ${appareil} — ${dateFormatted}`);
   const body = encodeURIComponent(
     `Nouvelle demande de rendez-vous MR PHONE 67\n` +
     `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n` +
@@ -159,6 +168,8 @@ rdvForm.addEventListener('submit', (e) => {
     `📞 Téléphone : ${tel}\n` +
     `📱 Appareil : ${appareil}\n` +
     `📋 Modèle : ${modele}\n` +
+    `📅 Date : ${dateFormatted}\n` +
+    `🕐 Heure : ${heureRdv}\n` +
     `🔧 Problème : ${probleme}\n\n` +
     `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
     `Envoyé depuis le site reparationsmartphone.net`
